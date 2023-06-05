@@ -14,7 +14,7 @@
 //2007.04.20 c.java sql.date/time/timestamp
 //jar cf jdbc.jar *.class   url(jdbc:q:host:port) isql(new service resources jdbc.jar)
 //javac -Xbootclasspath:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar -target 1.6 -source 1.6 jdbc.java 
-import kx.*;
+import com.kx.*;
 import java.io.*;
 import java.math.*;
 import java.sql.*;
@@ -82,7 +82,7 @@ public class co implements Connection{
    if(streaming)
      throw new SQLException("A ResultSet is still open on this connection with messages queued from the server");
    try{
-     boolean args=0<kx.c.n(p);
+     boolean args=0<com.kx.c.n(p);
      String lambda="{[maxRows;fetchSize;fn;args]$[not .Q.qt r:value[fn]args;::;count r:select[maxRows]from 0!r;{neg[.z.w]@/:-1_x;last x}(0N;fetchSize)#r;r]}["+(maxRows>0?maxRows:Integer.MAX_VALUE)+";"+(fetchSize>0?fetchSize:Integer.MAX_VALUE)+"]";
      if(args)
        c.k(lambda,s.toCharArray(),p);

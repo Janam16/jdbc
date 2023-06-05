@@ -4,9 +4,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.kx</groupId>
+  <groupId>com.jdbc</groupId>
   <artifactId>jdbc</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <parent>
@@ -43,11 +43,11 @@
   </scm>
 
   <dependencies>
-   <dependency>
-      <groupId>com.kx.javakdb</groupId>
+   
+    <dependency>
+      <groupId>com.kx</groupId>
       <artifactId>javakdb</artifactId>
-      <version>1.0</version>
-      <scope>compile</scope>
+      <version>2.0</version>
     </dependency>
   </dependencies>
 
