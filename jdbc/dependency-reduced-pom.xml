@@ -6,8 +6,8 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.jdbc</groupId>
-  <artifactId>kdb</artifactId>
+  <groupId>com.kdb</groupId>
+  <artifactId>jdbc</artifactId>
   <name>JDBC_KDB</name>
   <version>1.0</version>
   <description>JDBC client for kdb+</description>
@@ -105,7 +105,7 @@
               <transformers>
                 <transformer>
                   <manifestEntries>
-                    <Main-Class>com.jdbc.jdbc</Main-Class>
+                    <Main-Class>com.kdb.jdbc</Main-Class>
                   </manifestEntries>
                 </transformer>
               </transformers>
