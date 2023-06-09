@@ -7,7 +7,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.jdbc</groupId>
-  <artifactId>jdbc</artifactId>
+  <artifactId>kdb</artifactId>
   <name>JDBC_KDB</name>
   <version>1.0</version>
   <description>JDBC client for kdb+</description>
