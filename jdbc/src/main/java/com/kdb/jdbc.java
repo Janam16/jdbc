@@ -1,4 +1,4 @@
-package com.jdbc;
+package com.kdb;
 //2019.12.16 getTimestamp() was throwing an exception when given a java.util.date
 //           setMaxRows/setFetchSize was not interpreting 0 to indicate unlimited.
 //2019.11.10 Cleaned up logic from last commit.
